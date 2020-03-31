@@ -1,0 +1,12 @@
+MERN Stack
+
+MongoDB: A doc-based open source db.
+Express: A web app framework for Node
+React: A JS frontend library for building user interfaces
+Node: JS environment that executes JS code outside the browser (server)
+
+Mongoose: Schema-based solution to model app data
+
+MongoDB Documents
+Mongo stores data in binary json(BJSON)
+can have nested documents(data)
