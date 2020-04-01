@@ -32,4 +32,15 @@ router.route('/add').post((req, res) =>{
     })
 })
 
+router.get('/:id', (req, res) => {
+    const id = req.params.id;
+    Exercise.findById(id)
+    .then(id => {
+        res.status(200).json(id)
+    })
+    .catch(err => {
+        res.status(400).json(`Error: `, err);
+    })
+})
+
 module.exports = router;
