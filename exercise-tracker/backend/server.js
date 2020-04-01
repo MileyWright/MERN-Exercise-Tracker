@@ -19,6 +19,7 @@ connection.once('open', () => {
     console.log(`MongoDB database connection established successfully`);
 })
 mongoose.set('useCreateIndex', true);
+mongoose.set('useFindAndModify', false);
 app.use('/exercises', exercisesRouter);
 app.use('/users', usersRouter);
 
