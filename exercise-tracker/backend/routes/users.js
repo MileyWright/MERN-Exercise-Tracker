@@ -11,10 +11,10 @@ router.route('/').get((req, res) => {
     )
 });
 
-router.route('/add').post((req, res) => {
+router.post('/add', (req, res) => {
     const username = req.body.username;
     const newUser = new User({username});
-    User.save()
+    newUser.save()
     .then(added => {
         res.status(201).json(added)
     })

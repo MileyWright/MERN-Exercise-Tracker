@@ -10,3 +10,7 @@ Mongoose: Schema-based solution to model app data
 MongoDB Documents
 Mongo stores data in binary json(BJSON)
 can have nested documents(data)
+
+MongoDB route methods
+.find() - GET
+.save() - POST
