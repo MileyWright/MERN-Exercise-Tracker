@@ -16,4 +16,6 @@ MongoDB route methods
 .save() - POST
 .findById() - GET by findById
 .findByIdAndDelete() - findByIdAndDelete
-.findById() -> .save() - POST instead of PUT to update.
+.findById() -> .save() - POST instead of PUT to update. 
+        or
+.findByIdAndUpdate(req.params.id, req.body, {new:true}) - PUT request

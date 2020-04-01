@@ -54,4 +54,17 @@ router.delete('/:id', (req, res) => {
     })
 })
 
+router.put('/:id', (req, res) => {
+    const id = req.params.id;
+    const update = req.body;
+    Exercise.findByIdAndUpdate(id, update,{new: true})
+    .then(exercise => {
+        res.status(201).json(exercise)
+    })
+    .catch(err => {
+        res.status(400).json(`Error: `, err)
+    })
+    
+})
+
 module.exports = router;
